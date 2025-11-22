@@ -59,21 +59,18 @@ We can quantify *movements* through various tools:
 
 ## Animal behaviour 🤝 computer vision {.smaller}
 
-::: {layout="[[50, 50]]" layout-valign="center"}
 
-![](img/ethology_overview.png)
-
+![](img/gap_after_tracking_A.png){height="250"}
+  
 ::: {.fragment}
-![](img/fields_converge_on_tracking.png)
-:::
-
+![](img/fields_converge_on_tracking.png){.absolute top=100 right=20  height="400"}
 :::
 
 
 ## What happens after tracking? {.smaller}
 
 
-![](img/gap_after_tracking.png)
+![](img/gap_after_tracking.png){height="250px"}
 
 ::: {.fragment}
 - Lack of standardised data formats and tools
@@ -145,9 +142,7 @@ See also [movement.neuroinformatics.dev/latest/examples](https://movement.neuroi
 
 - {{< fa download >}} >70k downloads (PyPI + conda-forge)
 - {{< fa brands github >}} 29 code contributors | {{< fa code-pull-request >}} ~300 merged pull requests
-- {{< fa message >}} Public forum with 98 members (~20 messages/week)
-- {{< fa brands python >}} 2 external packages depending on `movement`:
-
+- {{< fa brands python >}} External packages depending on `movement`:
 
 ::: {layout="[[60, 20, -20]]" layout-valign="bottom" .fragment}
 ![[ethoml.github.io/VAME](https://ethoml.github.io/VAME)](img/VAME.gif)
@@ -183,7 +178,16 @@ Long-term vision: `movement` as the *scikit-image* for animal motion data.
 
 ## Acknowledgements {.smaller}
 
-<iframe src="https://movement.neuroinformatics.dev/latest/community/people.html" title="movement people" style="max-height: 110%; max-width: 125%; width: 125%; height: 100%; transform: scale(0.8); transform-origin: top left;;"></iframe>
+::: {.r-stack}
+
+![](img/movement_community_A.png){width="1000px"}
+
+::: {.fragment}
+![](img/movement_community.png){width="1000px"}
+:::
+
+:::
+
 
 ::: footer
 [movement.neuroinformatics.dev/latest/community/people](https://movement.neuroinformatics.dev/latest/community/people.html)

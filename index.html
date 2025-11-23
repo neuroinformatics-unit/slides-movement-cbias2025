@@ -7,6 +7,8 @@
 <link href="index_files/libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="index_files/libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="index_files/libs/quarto-html/quarto-syntax-highlighting-ac1a48248070c8bfbae4244efd7728e4.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="index_files/libs/quarto-contrib/videojs/video.min.js"></script>
+<link href="index_files/libs/quarto-contrib/videojs/video-js.css" rel="stylesheet">
 <link href="index_files/libs/quarto-contrib/fontawesome6-6.7.2/all.min.css" rel="stylesheet">
 <link href="index_files/libs/quarto-contrib/fontawesome6-6.7.2/latex-fontsize.css" rel="stylesheet"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.8.26">
@@ -178,7 +180,6 @@ Niko Sirmpilatze @ CBIAS 2025
 <li>🎥 <strong>Video cameras</strong></li>
 <li>📱 Inertial measurement units (IMUs)</li>
 <li>🛰️ GPS-based biologgers</li>
-<li>🎤 Microphones</li>
 </ul>
 </div>
 </section>
@@ -233,42 +234,29 @@ Niko Sirmpilatze @ CBIAS 2025
 </section>
 <section id="animal-behaviour-computer-vision" class="slide level2 smaller">
 <h2>Animal behaviour 🤝 computer vision</h2>
-<div class="quarto-layout-panel" data-layout="[[50, 50]]">
-<div class="quarto-layout-row quarto-layout-valign-center">
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
-<p><img data-src="img/ethology_overview.png"></p>
-</div>
-<div class="fragment quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
-<p><img data-src="img/fields_converge_on_tracking.png"></p>
-</div>
-</div>
+<p><img data-src="img/gap_after_tracking_A.png" height="250"></p>
+<div class="fragment">
+<p><img data-src="img/fields_converge_on_tracking.png" class="absolute" style="top: 100px; right: 20px; height: 400px; "></p>
 </div>
 </section>
 <section id="what-happens-after-tracking" class="slide level2 smaller">
 <h2>What happens after tracking?</h2>
-
-<img data-src="img/gap_after_tracking.png" class="r-stretch"><div class="fragment">
+<p><img data-src="img/gap_after_tracking.png" height="250"></p>
 <ul>
-<li>Lack of standardised data formats and tools</li>
-<li>Little cross-talk between research fields</li>
-<li>Lots of fragile ‘in-house’ scripts</li>
-<li>Piles of un-analysed data</li>
+<li class="fragment">Lack of standardised data formats and tools</li>
+<li class="fragment">Lots of fragile ‘in-house’ scripts</li>
+<li class="fragment">Piles of un-analysed data</li>
 </ul>
-</div>
 </section>
 <section id="movement-overview" class="slide level2 smaller">
-<h2><code>movement</code> overview</h2>
+<h2>movement: overview</h2>
 
 <img data-src="img/movement_overview.png" class="quarto-figure quarto-figure-center r-stretch"><div class="footer">
 <p><a href="https://movement.neuroinformatics.dev/">movement.neuroinformatics.dev</a></p>
 </div>
 </section>
-<section id="movement-gui" class="slide level2 smaller">
-<h2><code>movement</code> GUI</h2>
-
-<img data-src="img/napari_screenshot.png" class="quarto-figure quarto-figure-center r-stretch"></section>
 <section id="movement-example-applications" class="slide level2 smaller">
-<h2><code>movement</code> example applications</h2>
+<h2>movement: example applications</h2>
 <div class="quarto-layout-panel" data-layout="[[25, 25, 20, 20], [40, 20, 40]]">
 <div class="quarto-layout-row">
 <div class="fragment quarto-layout-cell" data-fragment-index="2" style="flex-basis: 27.8%;justify-content: center;">
@@ -303,13 +291,19 @@ Niko Sirmpilatze @ CBIAS 2025
 <aside><div>
 <p>See also <a href="https://movement.neuroinformatics.dev/latest/examples">movement.neuroinformatics.dev/latest/examples</a></p>
 </div></aside></section>
+<section id="movement-gui" class="slide level2 smaller" data-background-color="black">
+<h2>movement GUI</h2>
+<video id="video_shortcode_videojs_video1" width="880" height="550" class="video-js vjs-default-skin " controls="" preload="auto" data-setup="{}" title=""><source src="img/movement_demo_octagon_CBIAS2025.mp4"></video>
+<div class="footer">
+<p><a href="https://movement.neuroinformatics.dev/user_guide/input_output.html#sample-data">Sample data</a>: <strong>Octagon</strong> from <em>Ann Duan’s Lab</em>.</p>
+</div>
+</section>
 <section id="community-adoption" class="slide level2 smaller">
 <h2>Community adoption</h2>
 <ul>
 <li><i class="fa-solid fa-download" aria-label="download"></i> &gt;70k downloads (PyPI + conda-forge)</li>
 <li><i class="fa-brands fa-github" aria-label="github"></i> 29 code contributors | <i class="fa-solid fa-code-pull-request" aria-label="code-pull-request"></i> ~300 merged pull requests</li>
-<li><i class="fa-solid fa-message" aria-label="message"></i> Public forum with 98 members (~20 messages/week)</li>
-<li><i class="fa-brands fa-python" aria-label="python"></i> 2 external packages depending on <code>movement</code>:</li>
+<li><i class="fa-brands fa-python" aria-label="python"></i> External packages depending on <code>movement</code>:</li>
 </ul>
 <div class="fragment quarto-layout-panel" data-layout="[[60, 20, -20]]">
 <div class="quarto-layout-row quarto-layout-valign-bottom">
@@ -338,10 +332,7 @@ Niko Sirmpilatze @ CBIAS 2025
 <section id="the-bigger-picture" class="slide level2">
 <h2>The bigger picture</h2>
 <div class="r-stack">
-<p><img data-src="img/neuroethology_workflow_movement_A.png" width="1000"></p>
-<div class="fragment">
 <p><img data-src="img/neuroethology_workflow_movement_B.png" width="1000"></p>
-</div>
 <div class="fragment">
 <p><img data-src="img/neuroethology_workflow_movement_C.png" width="1000"></p>
 </div>
@@ -356,14 +347,18 @@ Niko Sirmpilatze @ CBIAS 2025
 </div></aside></section>
 <section id="acknowledgements" class="slide level2 smaller">
 <h2>Acknowledgements</h2>
-<iframe src="https://movement.neuroinformatics.dev/latest/community/people.html" title="movement people" style="max-height: 110%; max-width: 125%; width: 125%; height: 100%; transform: scale(0.8); transform-origin: top left;;">
-</iframe>
+<div class="r-stack">
+<p><img data-src="img/movement_community_A.png" width="1000"></p>
+<div class="fragment">
+<p><img data-src="img/movement_community.png" width="1000"></p>
+</div>
+</div>
 <div class="footer">
 <p><a href="https://movement.neuroinformatics.dev/latest/community/people.html">movement.neuroinformatics.dev/latest/community/people</a></p>
 </div>
 </section>
 <section id="join-the-movement" class="slide level2">
-<h2>Join the <code>movement</code>!</h2>
+<h2>Join the movement!</h2>
 <ul>
 <li><i class="fa-solid fa-globe" aria-label="globe"></i> <a href="https://movement.neuroinformatics.dev/">movement.neuroinformatics.dev</a></li>
 <li><i class="fa-brands fa-github" aria-label="github"></i> <a href="https://github.com/neuroinformatics-unit/movement">github.com/neuroinformatics-unit/movement</a></li>
@@ -793,6 +788,7 @@ Tinbergen, Niko. 1951. <em>The <span>Study</span> of <span>Instinct</span></em>.
         }
       });
       </script>
+    <script>videojs(video_shortcode_videojs_video1);</script>
     
 
 </body></html>
